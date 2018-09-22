@@ -1,5 +1,5 @@
 interface Promise<T> {
-  withErrors():Promise<[T | Error]>;
+  withErrors():Promise<T | Error>;
 }
 
 Promise.prototype.withErrors = function() {
