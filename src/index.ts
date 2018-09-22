@@ -5,6 +5,6 @@ interface Promise<T> {
 Promise.prototype.withErrors = function() {
   return this
   .then( data => data )
-  .catch( err => err )
+  .catch( err => new Error( err ) )
 }
 
