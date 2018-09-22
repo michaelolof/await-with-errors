@@ -6,7 +6,7 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "git-commit.sh 'changes made' && git push origin"
+    "publish": "tsc && git-commit.sh 'changes made' && git push origin"
   },
   "author": "michaelolof",
   "license": "ISC",
